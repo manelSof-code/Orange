@@ -1,3 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
+@import '~boosted/dist/css/boosted.min.css';
+
+  html {
+      line-height: 1.15; /* 1 */
+      -webkit-text-size-adjust: 100%; /* 2 */
+    }
+    
+    /* Sections
+       ========================================================================== */
+    
+    /**
+     * Remove the margin in all browsers.
+     */
+    
+    body {
+      margin: 0;
+    }
+     
+    main {
+      display: block;
+    }
+  footer{
+    color:#F57A25;
+    background-color: black;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-weight: bold;
+
+  } 
+
+  
+
+  

@@ -16,16 +16,11 @@ export class LoginComponent implements OnInit {
   ) { }
   ngOnInit() {
   }
-  login(formulaire: NgForm) {
-    this.authentificationService.login(formulaire.value).subscribe(
-      (response) => {
-        localStorage.setItem('user', response['id']);
-        this.router.navigate(['']);
-      },
-      (erreur) => {
-        console.log(erreur);
-      }
-    );
+  login() {
+    this.router.navigate(['/Header']);
+  }
+  register(){
+    this.router.navigate(['/register']);
   }
 
 }

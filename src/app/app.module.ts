@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgBoostedModule } from 'ng-boosted';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 // Components imports
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
@@ -28,9 +30,19 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveProgComponent } from './reactive-prog/reactive-prog.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthentificationInterceptorProvider} from './interceptors/auth.interceptors';
-
+import { OffersComponent } from './offers/offers.component';
+import { RequestsComponent } from './requests/requests.component';
+import { ParticipantsComponent } from './participants/participants.component';
+import { TransactionsComponent } from './transactions/transactions.component';
+import { AddAssetComponent } from './add-asset/add-asset.component';
+import { PostOfferComponent } from './post-offer/post-offer.component';
+import { PostRequestComponent } from './post-request/post-request.component';
+import { FooterComponent } from './footer/footer.component';
+import { RegisterComponent } from './register/register.component';
+import { RestPwdComponent } from './rest-pwd/rest-pwd.component';
 @NgModule({
   declarations: [
+    OffersComponent,
     AppComponent,
     FirstComponent,
     SecondComponent,
@@ -51,13 +63,30 @@ import {AuthentificationInterceptorProvider} from './interceptors/auth.intercept
     AddComponent,
     LoginComponent,
     ReactiveProgComponent,
+    OffersComponent,
+    RequestsComponent,
+    ParticipantsComponent,
+    TransactionsComponent,
+    AddAssetComponent,
+    PostOfferComponent,
+    PostRequestComponent,
+    FooterComponent,
+    RegisterComponent,
+    RestPwdComponent,
+    
   ],
   imports: [
+    Ng2SmartTableModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    NgbModule.forRoot(),
+    NgBoostedModule ,
+   
+    
+    
+],
   providers: [
     TodoService,
     AuthentificationInterceptorProvider
