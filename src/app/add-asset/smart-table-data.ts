@@ -1,4 +1,13 @@
 export var settings = {
+    delete: {
+        confirmDelete: true,
+      },
+      add: {
+        confirmCreate: true,
+      },
+      edit: {
+        confirmSave: true,
+      },
     columns: {
         Asset: {
         title: 'Asset',

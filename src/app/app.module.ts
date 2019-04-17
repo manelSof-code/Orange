@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from 'ng-boosted';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { FlexLayoutModule } from '@angular/flex-layout';
 // Components imports
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
@@ -40,6 +41,7 @@ import { PostRequestComponent } from './post-request/post-request.component';
 import { FooterComponent } from './footer/footer.component';
 import { RegisterComponent } from './register/register.component';
 import { RestPwdComponent } from './rest-pwd/rest-pwd.component';
+import { AddAssetService } from './service/add-asset.service';
 @NgModule({
   declarations: [
     OffersComponent,
@@ -83,13 +85,15 @@ import { RestPwdComponent } from './rest-pwd/rest-pwd.component';
     HttpClientModule,
     NgbModule.forRoot(),
     NgBoostedModule ,
+    FlexLayoutModule
    
     
     
 ],
   providers: [
     TodoService,
-    AuthentificationInterceptorProvider
+    AuthentificationInterceptorProvider,
+    AddAssetService,
   ],
   bootstrap: [AppComponent]
 })
