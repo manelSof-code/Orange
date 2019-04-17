@@ -43,6 +43,7 @@ import { RegisterComponent } from './register/register.component';
 import { RestPwdComponent } from './rest-pwd/rest-pwd.component';
 import { AddAssetService } from './service/add-asset.service';
 import { OffersService } from './service/offers.service';
+import { RequestService } from './service/request.service';
 @NgModule({
   declarations: [
     OffersComponent,
@@ -96,6 +97,7 @@ import { OffersService } from './service/offers.service';
     AuthentificationInterceptorProvider,
     AddAssetService,
     OffersService,
+    RequestService,
   ],
   bootstrap: [AppComponent]
 })
