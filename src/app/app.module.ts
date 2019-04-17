@@ -42,6 +42,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RegisterComponent } from './register/register.component';
 import { RestPwdComponent } from './rest-pwd/rest-pwd.component';
 import { AddAssetService } from './service/add-asset.service';
+import { OffersService } from './service/offers.service';
 @NgModule({
   declarations: [
     OffersComponent,
@@ -94,6 +95,7 @@ import { AddAssetService } from './service/add-asset.service';
     TodoService,
     AuthentificationInterceptorProvider,
     AddAssetService,
+    OffersService,
   ],
   bootstrap: [AppComponent]
 })

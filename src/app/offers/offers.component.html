@@ -18,38 +18,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-                    <th>1</th>
-                    <th>Phone</th>
-                    <th>1</th>
-                    <th>10</th>
-                    <th>2019-03-23 Time:23.59</th>
-                    <th>2019-03-23 Time:23.59</th>
-                    <th>2019-03-23 Time:23.59</th>
-                    <th>90vegjloyu</th>
-                    <th> tunis</th>
-            </tr>
-            <tr>
-                    <th>1</th>
-                    <th>Phone</th>
-                    <th>1</th>
-                    <th>10</th>
-                    <th>2019-03-23 Time:23.59</th>
-                    <th>2019-03-23 Time:23.59</th>
-                    <th>2019-03-23 Time:23.59</th>
-                    <th>90vegjloyu</th>
-                    <th> tunis</th>
-            </tr>
-            <tr>
-                    <th>1</th>
-                    <th>Phone</th>
-                    <th>1</th>
-                    <th>10</th>
-                    <th>2019-03-23 Time:23.59</th>
-                    <th>2019-03-23 Time:23.59</th>
-                    <th>2019-03-23 Time:23.59</th>
-                    <th>90vegjloyu</th>
-                    <th> tunis</th>
+            <tr *ngFor="let offer of offers">
+              <td>{{ offer.id }}</td>
+              <td>{{ offer.quantity }}</td>
+              <td>{{ offer.unitaryPrice }}</td>
+              <td>{{ offer.Begin_Time_slot }}</td>
+              <td>{{ offer.End_Time_slot }}</td>
+              <td>{{ offer.Publication_time }}</td>
+              <td>{{ offer.Expiration_time }}</td>
+              <td>{{ offer.Asset }}</td>
+              <td>{{ offer.location }}</td>
             </tr>
           </tbody>
           <!--Table body-->

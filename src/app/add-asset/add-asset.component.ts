@@ -16,6 +16,7 @@ export class AddAssetComponent  {
     this.source = new LocalDataSource();
     this.service.getAsset().toPromise().then((data) => {
     this.source.load(this.data);
+    console.log(typeof(this.data));
     });                                    
   }
   settings = tableData.settings;
