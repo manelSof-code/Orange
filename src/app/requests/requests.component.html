@@ -15,21 +15,21 @@
               <th>Publication Time</th>
               <th>Expiration Time</th>
               <th>Consumer</th>
-              <th> Location</th>
+              <th>Location</th>
             </tr>
           </thead>
           <tbody>
             <tr *ngFor="let request of Requests">
-              <td>{{ request.id }}</td>
-              <td>{{ request.Assettype }}</td>
+              <td>{{ request.requestId }}</td>
+              <td>{{ request.AssetType }}</td>
               <td>{{ request.quantity }}</td>
               <td>{{ request.unitaryPrice }}</td>
-              <td>{{ request.Begin_Time_slot }}</td>
-              <td>{{ request.End_Time_slot }}</td>
-              <td>{{ request.Publication_time }}</td>
-              <td>{{ request.Expiration_time }}</td>
-              <td>{{ request.Consumer}}</td>
-              <td>{{ request.location }}</td>
+              <td>{{ request.beginTimeSlot }}</td>
+              <td>{{ request.endTimeSlot}}</td>
+              <td>{{ request.publicationTime }}</td>
+              <td>{{ request.expirationTime}}</td>
+              <td>{{ request.location}}</td>
+              <td>{{ request.consumer}}</td>
             </tr>
           </tbody>
           <!--Table body-->

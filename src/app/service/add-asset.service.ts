@@ -6,13 +6,18 @@ import { Asset } from '../Model/Asset';
 })
 export class AddAssetService  {
   private assets: Asset [];
-  apiLink = 'http://localhost:3000/api/personnes';
+  apiLinkget = '';
+  apiLinkadd ='' ;
   constructor(
     private http: HttpClient
   ) {}
   getAsset() {
     return this
     .http
-    .get(`${this.apiLink}`)
+    .get(`${this.apiLinkget}`)
 }
+addAsset (asset: Asset) {
+  return this.http.post<Asset>(this.apiLinkadd,asset);
+ }
+
 }

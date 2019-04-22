@@ -6,7 +6,8 @@
           <!--Table head-->
           <thead>
             <tr>
-              <th>Offer</th>
+              <th>offerId</th>
+              <th>assetType</th>
               <th>Quantity</th>
               <th>Unitary Price</th>
               <th>Begin Time Slot</th>
@@ -19,15 +20,16 @@
           </thead>
           <tbody>
             <tr *ngFor="let offer of offers">
-              <td>{{ offer.id }}</td>
+              <td>{{ offer.offerId }}</td>
+              <td>{{ offer.assetType}}</td>
               <td>{{ offer.quantity }}</td>
               <td>{{ offer.unitaryPrice }}</td>
               <td>{{ offer.Begin_Time_slot }}</td>
               <td>{{ offer.End_Time_slot }}</td>
               <td>{{ offer.Publication_time }}</td>
               <td>{{ offer.Expiration_time }}</td>
-              <td>{{ offer.Asset }}</td>
-              <td>{{ offer.location }}</td>
+              <td>{{ offer.myAsset }}</td>
+              <td>{{ offer.Location }}</td>
             </tr>
           </tbody>
           <!--Table body-->

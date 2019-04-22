@@ -44,6 +44,7 @@ import { RestPwdComponent } from './rest-pwd/rest-pwd.component';
 import { AddAssetService } from './service/add-asset.service';
 import { OffersService } from './service/offers.service';
 import { RequestService } from './service/request.service';
+import { ParticipantService } from './service/participant.service';
 @NgModule({
   declarations: [
     OffersComponent,
@@ -98,6 +99,7 @@ import { RequestService } from './service/request.service';
     AddAssetService,
     OffersService,
     RequestService,
+    ParticipantService,
   ],
   bootstrap: [AppComponent]
 })

@@ -1,60 +1,39 @@
 export var settings = {
-    delete: {
-        confirmDelete: true,
-      },
-      add: {
-        confirmCreate: true,
-      },
-      edit: {
-        confirmSave: true,
-      },
-    columns: {
-        Asset: {
-        title: 'Asset',
-        filter: false,
-       
+    columns: {  
+        Asset: {  
+          title: 'Asset',  
+          filter: true,  
+        },  
+        Description: {  
+          title: 'Description',  
+          filter: true,  
+        },  
+        Quantity: {  
+          title: 'Quantity',  
+          filter: true,  
         },
-        Description: {
-        title: ' Description',
-        filter: false,
-        },
-        Quantity: {
-        title: 'Quantity',
-        filter: false,
-        },
-       AssetType: {
-            title: 'Asset Type',
-            filter: false,
-            },
-        Owner: {
-                title: 'Owner',
-                filter: false,
-                },
-       
-            }
-};
-
-export var data = [
-    {
-        Asset: 1,
-        Description: 'mobile phone Nokia',
-        Quantity: '10',
-        AssetType:"phone",
-        Owner: "jaber Manel",
-    },
-    {
-        Asset: 1,
-        Description: 'mobile phone s8+',
-        Quantity: '10',
-        AssetType:"phone",
-        Owner: "Bradai Salma",
-    },
-    {
-        Asset: 1,
-        Description: 'mobile phone s9',
-        Quantity: '10',
-        AssetType:"phone",
-        Owner: "Amal gharssalah",
-    },
-                                              
-];
+        AssetType :{
+          title: 'AssetType',  
+          filter: true,
+        } ,
+        Owner :{
+            title: ' Owner',  
+            filter: true,
+          }  
+      },  
+      pager: {  
+        display: true,  
+        perPage: 10  
+      },  
+      actions: {  
+        columnTitle: 'Action',  
+        add: true,  
+        edit: true,  
+        delete: true,  
+        position: 'left'  
+      },  
+      attr: {  
+        class: 'table table-striped table-bordered table-hover'  
+      },  
+      defaultStyle: true  
+    }; 

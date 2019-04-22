@@ -1,45 +1,35 @@
 export var settings = {
-    
-    columns: {
-        ProsumerId: {
-        title: 'ProsumerId',
-        filter: false,
-       
+    columns: {  
+        prosumerId: {  
+          title: 'prosumerId',  
+          filter: true,  
+        },  
+        Firstname: {  
+          title: 'Firstname',  
+          filter: true,  
+        },  
+        lastname: {  
+          title: 'Lastname',  
+          filter: true,  
         },
-        FirstName: {
-        title: 'FirstName',
-        filter: false,
-        },
-        LastName: {
-        title: 'LastName',
-        filter: false,
-        },
-        Balance: {
-            title: 'Balance',
-            filter: false,
-            },
-     
-    },
-};
-
-export var data = [
-    {
-        ProsumerId: "Manel",
-        FirstName: 'Manel',
-        LastName: 'Jaber',
-        Balance: "100",
-    },
-    {
-        ProsumerId: "manel",
-        FirstName: 'manel',
-        LastName: 'Jaber',
-        Balance: "200",
-    },
-    {
-        ProsumerId: "amal",
-        FirstName: 'gharssalah',
-        LastName: 'amal',
-        Balance: "200",
-    },
-                                              
-];
+        Balance :{
+          title: 'Balance',  
+          filter: true,
+        }  
+      },  
+      pager: {  
+        display: true,  
+        perPage: 10  
+      },  
+      actions: {  
+        columnTitle: 'Action',  
+        add: true,  
+        edit: true,  
+        delete: true,  
+        position: 'left'  
+      },  
+      attr: {  
+        class: 'table table-striped table-bordered table-hover'  
+      },  
+      defaultStyle: true  
+    }; 

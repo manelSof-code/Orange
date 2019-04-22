@@ -1,67 +1,55 @@
 export var settings = {
-    columns: {
-        Request: {
-        title: 'Request',
-        filter: false,
-       
+    columns: {  
+        Request: {  
+          title: 'Request',  
+          filter: true,  
+        },  
+        Asset_type: {  
+          title: 'Asset_type',  
+          filter: true,  
+        }, 
+        Quantity: {  
+            title: 'Quantity',  
+            filter: true,  
+          }, 
+        Unitary_Price: {  
+          title: 'Unitary_Price',  
+          filter: true,  
         },
-        Asset_Type: {
-        title: 'Asset Type',
-        filter: false,
-        },
-       Quantity: {
-        title: 'Quantity',
-        filter: false,
-        },
-        Unitary_Price: {
-            title: 'Unitary_Price',
-            filter: false,
-            },
-        Begin_Time_slot: {
-                title: 'Begin_Time_slot',
-                filter: false,
-                },
-        End_Time_slot: {
-                title: 'End Time Slot',
-                filter: false,
-                },
-        Publication_Time: {
-                    title: 'Publication Time',
-                    filter: false,
-                    },
-       Expiration_Time: {
-                        title: 'Expiration Time',
-                        filter: false,
-                        },
-        Consumer: {
-                 title: 'Consumer',
-                filter: false,
-                            },
-    },
-};
-
-export var data = [
-    {
-        Request: 1,
-        Asset_Type: 'phone ',
-        Quantity: '1',
-        Unitary_Price:'10',
-        Begin_Time_slot: "2019-03-23 time 23.59",
-        End_Time_slot: "2019-03-23 time 23.59",
-        Publication_Time: "2019-03-23 time 21.59",
-        Expiration_Time: "2019-03-23 time 20.59",
-        Consumer: 'jaber Manel',
-    },
-    {
-        Request: 2,
-        Asset_Type: 'phone ',
-        Quantity: '1',
-        Unitary_Price:'10',
-        Begin_Time_slot: "2019-03-23 time 23.59",
-        End_Time_slot: "2019-03-23 time 23.59",
-        Publication_Time: "2019-03-23 time 21.59",
-        Expiration_Time: "2019-03-23 time 20.59",
-        Consumer: 'Salma bradai ',
-    },
-                                              
-];
+        Begin_time_slot :{
+          title: 'Begin_time_slot',  
+          filter: true,
+        } ,
+        End_time_slot :{
+            title: 'End_time_slot',  
+            filter: true,
+          }, 
+          Publication_Time :{
+            title: 'Publication_Time',  
+            filter: true,
+          } ,
+          Expiration_Time :{
+            title: 'Expiration_Time',  
+            filter: true,
+          } ,
+          Consumer :{
+            title: ' Consumer',  
+            filter: true,
+          } ,
+      },  
+      pager: {  
+        display: true,  
+        perPage: 10  
+      },  
+      actions: {  
+        columnTitle: 'Action',  
+        add: true,  
+        edit: true,  
+        delete: true,  
+        position: 'left'  
+      },  
+      attr: {  
+        class: 'table table-striped table-bordered table-hover'  
+      },  
+      defaultStyle: true  
+    }; 
